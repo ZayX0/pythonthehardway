@@ -16,7 +16,7 @@ if door == "1":
     else:
         print "You wake up in your bed and realize it was all a dream."
 
-elif door =="2":
+elif door == "2":
     print "You hear a voice asking you to close your eyes and take 3 steps forward..."
     print "1) Follow the voices instructions"
     print "2) Ignore the instructions entirely"
