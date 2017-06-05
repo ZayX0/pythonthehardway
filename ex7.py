@@ -8,7 +8,7 @@ print "And everywhere that Mary went."
 # This actually multiples the string, I didn't guess that one
 print "." * 10 # what'd that do?
 
-# It's still surprising to me that these
+# It's still surprising to me that these work
 end1 = "C"
 end2 = "h"
 end3 = "e"

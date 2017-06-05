@@ -9,10 +9,12 @@ print "If you do want that, hit RETURN."
 raw_input("?")
 
 print "Opening the file..."
+# The 'w' argument truncates or wipes the file, no need for target.truncate()
 target = open(filename, 'w')
 
-print "Trunacating the file. Goodbye!"
-target.truncate()
+# If you didn't have the 'w' argument you would need this
+# print "Trunacating the file. Goodbye!"
+# target.truncate()
 
 print "Now I'm going to ask you for the three lines."
 
