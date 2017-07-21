@@ -28,17 +28,47 @@ def q1(user_score):
 
 def question_2(score2):
     choice = raw_input("Which number is most appealing to you?\na) 10\nb) 20\nc) 30\nd) 40\n> ")
-    if choice == ("a" or 10):
+    if choice == ("a" or "10"):
         score2 += 10
-    elif choice == ("b" or 20):
+    elif choice == ("b" or "20"):
         score2 += 20
-    elif choice == ("c" or 30):
+    elif choice == ("c" or "30"):
         score2 += 30
-    elif choice == ("d" or 40):
+    elif choice == ("d" or "40"):
         score2 += 40
     else:
         print "That's not a valid entry, c'mon now, pick a valid letter or number"
         question_2(score2)
-    print(score2)
+
+    question_3(score2)
+
+def question_3(score3):
+    choice = raw_input("You're low on health and the last one alive in a losing team fight, but the enemy Mercy is one hit away from dying, what do you do?\n\na) Ignore her and regroup\nb) Dive in and try to kill her\nc) Go after a different member of the enemy team\nd) Jump around and spam you need healing\n> ")
+
+    if choice == "a":
+        score3 += 10
+    elif choice == "b":
+        score3 += -10
+    elif choice == "c":
+        score3 += -30
+    elif choice == "d":
+        score3 += -50
+    else:
+        "Not a valid option, try again"
+        question_3(score3)
+
+    conclusion(score3)
+
+def conclusion(final):
+    print "Your final score is %d" % final
+
+    if final <= 0:
+        print "You've got some work to do..."
+    elif 0 < final < 20:
+        print "You're not bad"
+    elif 20 < final < 50:
+        print "You're average"
+    else:
+        print "Nice Work"
 
 opening()

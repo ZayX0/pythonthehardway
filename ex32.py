@@ -15,7 +15,7 @@ for fruit in fruits:
 for i in change:
     print "I got %r" % i
 
-# we cana lso build lists, first start with an empty one
+# we cana also build lists, first start with an empty one
 elements = range(6)
 
 # then use the range function to do 0 to 5 counts
